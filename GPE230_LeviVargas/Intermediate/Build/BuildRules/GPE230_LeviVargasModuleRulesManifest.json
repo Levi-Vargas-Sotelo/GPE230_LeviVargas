@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\levib\\Documents\\Unreal Projects\\GPE230_LeviVargas\\GPE230_LeviVargas\\GPE230_LeviVargas\\Source\\GPE230_LeviVargas\\GPE230_LeviVargas.Build.cs",
+		"C:\\Users\\levib\\Documents\\Unreal Projects\\GPE230_LeviVargas\\GPE230_LeviVargas\\GPE230_LeviVargas\\Source\\GPE230_LeviVargas.Target.cs",
+		"C:\\Users\\levib\\Documents\\Unreal Projects\\GPE230_LeviVargas\\GPE230_LeviVargas\\GPE230_LeviVargas\\Source\\GPE230_LeviVargasEditor.Target.cs"
+	],
+	"EngineVersion": "5.3.2"
+}

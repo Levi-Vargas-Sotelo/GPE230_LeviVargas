@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "GPE230_LeviVargas",
+			"Path": "..\\Source\\GPE230_LeviVargas.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "GPE230_LeviVargasEditor",
+			"Path": "..\\Source\\GPE230_LeviVargasEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
