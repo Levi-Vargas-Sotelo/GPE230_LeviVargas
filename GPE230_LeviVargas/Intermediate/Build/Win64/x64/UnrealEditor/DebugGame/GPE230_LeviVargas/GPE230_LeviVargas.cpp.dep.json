@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\levib\\documents\\unreal projects\\gpe230_levivargas\\gpe230_levivargas\\gpe230_levivargas\\source\\gpe230_levivargas\\gpe230_levivargas.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\levib\\documents\\unreal projects\\gpe230_levivargas\\gpe230_levivargas\\gpe230_levivargas\\intermediate\\build\\win64\\x64\\gpe230_levivargaseditor\\debuggame\\engine\\sharedpch.engine.nonoptimized.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\levib\\documents\\unreal projects\\gpe230_levivargas\\gpe230_levivargas\\gpe230_levivargas\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\gpe230_levivargas\\definitions.gpe230_levivargas.h",
+            "c:\\users\\levib\\documents\\unreal projects\\gpe230_levivargas\\gpe230_levivargas\\gpe230_levivargas\\source\\gpe230_levivargas\\gpe230_levivargas.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

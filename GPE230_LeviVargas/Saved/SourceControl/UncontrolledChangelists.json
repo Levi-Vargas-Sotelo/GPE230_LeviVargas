@@ -5,7 +5,14 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset"
+				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
+				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/Levels/Main.umap",
+				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/Levels/MovementTest.umap",
+				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/MazeGameModeBP.uasset",
+				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/MazeCharacterBP.uasset",
+				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/TestMazeCharacter.uasset",
+				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/LockAndKeyBP.uasset",
+				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/Levels/DoorKeyTest.umap"
 			]
 		}
 	]
