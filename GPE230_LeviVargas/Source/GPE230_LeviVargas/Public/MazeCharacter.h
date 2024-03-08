@@ -3,6 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "NiagaraFunctionLibrary.h"
+#include "NiagaraComponent.h"
 #include "GameFramework/Character.h"
 #include "MazeCharacter.generated.h"
 
@@ -14,6 +16,10 @@ class GPE230_LEVIVARGAS_API AMazeCharacter : public ACharacter
 public:
 	// Sets default values for this character's properties
 	AMazeCharacter();
+
+	void HealPlayer(float HealAmount);
+
+	void ChangeSpeed(float multAmount);
 
 protected:
 	// Called when the game starts or when spawned
@@ -39,10 +45,22 @@ private:
 	UPROPERTY()
 	bool jumping;
 
+	UPROPERTY(EditAnywhere)
+	UAnimSequence* _deathAnim;
+	bool _isDead = false;
+
+	UPROPERTY(EditAnywhere)
+	UNiagaraSystem* _stunSystem;
+
+	UFUNCTION(BlueprintCallable)
+	void ActivateStunParticleSystem();
+
 public:
 	//value for the max health 
 	UPROPERTY(EditAnywhere)
 	float maxHealth;
+	UPROPERTY(EditAnywhere)
+	float defaultMoveSpeed;
 
 protected:
 	//value for health at all times
@@ -54,4 +72,5 @@ private:
 	void MoveLR(float value);
 	void Rotate(float value);
 	void CheckJump();
+	void SetDefaultMoveSpeed();
 };

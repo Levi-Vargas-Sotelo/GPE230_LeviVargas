@@ -6,27 +6,13 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/Levels/Main.umap",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/Levels/MovementTest.umap",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/MazeGameModeBP.uasset",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/MazeCharacterBP.uasset",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/LockAndKeyBP.uasset",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/Levels/DoorKeyTest.umap",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/Materials/Blue.uasset",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/Materials/Green.uasset",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/Materials/Red.uasset",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/Levels/TestLevels/DoorKeyTest.umap",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/Levels/TestLevels/MovementTest.umap",
 				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/Levels/TestLevels/NPCTest.umap",
+				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/HealthPickup.uasset",
 				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/NPCEnemyBP.uasset",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/NPCEnemyController.uasset",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/NPCEnemyBT.uasset",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/ControlRig/Characters/Mannequins/Animations/ABP_Quinn.uasset",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/ControlRig/Characters/Mannequins/Animations/ABP_Manny.uasset",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/EnemyBlackboard.uasset",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/TaskGetRandomLocation.uasset",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/TestMazeCharacter.uasset",
-				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/Levels/NPCTest.umap"
+				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/MazeCharacterBP.uasset",
+				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/SpeedPickup.uasset",
+				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/MazeGameModeBP.uasset",
+				"C:/Users/levib/Documents/Unreal Projects/GPE230_LeviVargas/GPE230_LeviVargas/GPE230_LeviVargas/Content/MazeCharacterBP_Broken.uasset"
 			]
 		}
 	]

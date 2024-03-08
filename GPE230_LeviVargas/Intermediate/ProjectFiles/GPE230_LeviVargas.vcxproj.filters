@@ -42,6 +42,9 @@
     <Filter Include="Source\GPE230_LeviVargas\Private">
       <UniqueIdentifier>{A04DB215-1B1F-33A3-A18D-499D261CC53B}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\GPE230_LeviVargas\Private\HealthPickup.cpp">
+      <Filter>Source\GPE230_LeviVargas\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\GPE230_LeviVargas\Private\LockAndKey.cpp">
       <Filter>Source\GPE230_LeviVargas\Private</Filter>
     </ClCompile>
@@ -54,9 +57,21 @@
     <ClCompile Include="..\..\Source\GPE230_LeviVargas\Private\MazePlayerController.cpp">
       <Filter>Source\GPE230_LeviVargas\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\GPE230_LeviVargas\Private\NPCEnemy.cpp">
+      <Filter>Source\GPE230_LeviVargas\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\GPE230_LeviVargas\Private\Pickup.cpp">
+      <Filter>Source\GPE230_LeviVargas\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\GPE230_LeviVargas\Private\SpeedPickup.cpp">
+      <Filter>Source\GPE230_LeviVargas\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\GPE230_LeviVargas\Public">
       <UniqueIdentifier>{14A6A269-4EAC-31BD-9EC8-ACE422D6F3C1}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\GPE230_LeviVargas\Public\HealthPickup.h">
+      <Filter>Source\GPE230_LeviVargas\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\GPE230_LeviVargas\Public\LockAndKey.h">
       <Filter>Source\GPE230_LeviVargas\Public</Filter>
     </ClInclude>
@@ -67,6 +82,15 @@
       <Filter>Source\GPE230_LeviVargas\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\GPE230_LeviVargas\Public\MazePlayerController.h">
+      <Filter>Source\GPE230_LeviVargas\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\GPE230_LeviVargas\Public\NPCEnemy.h">
+      <Filter>Source\GPE230_LeviVargas\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\GPE230_LeviVargas\Public\Pickup.h">
+      <Filter>Source\GPE230_LeviVargas\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\GPE230_LeviVargas\Public\SpeedPickup.h">
       <Filter>Source\GPE230_LeviVargas\Public</Filter>
     </ClInclude>
   </ItemGroup>
