@@ -48,6 +48,9 @@
     <ClCompile Include="..\..\Source\GPE230_LeviVargas\Private\LockAndKey.cpp">
       <Filter>Source\GPE230_LeviVargas\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\GPE230_LeviVargas\Private\MainMenuGameMode.cpp">
+      <Filter>Source\GPE230_LeviVargas\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\GPE230_LeviVargas\Private\MazeCharacter.cpp">
       <Filter>Source\GPE230_LeviVargas\Private</Filter>
     </ClCompile>
@@ -55,6 +58,9 @@
       <Filter>Source\GPE230_LeviVargas\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\GPE230_LeviVargas\Private\MazePlayerController.cpp">
+      <Filter>Source\GPE230_LeviVargas\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\GPE230_LeviVargas\Private\MazeSaveGame.cpp">
       <Filter>Source\GPE230_LeviVargas\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\GPE230_LeviVargas\Private\NPCEnemy.cpp">
@@ -66,6 +72,9 @@
     <ClCompile Include="..\..\Source\GPE230_LeviVargas\Private\SpeedPickup.cpp">
       <Filter>Source\GPE230_LeviVargas\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\GPE230_LeviVargas\Private\VictoryTriggerVolume.cpp">
+      <Filter>Source\GPE230_LeviVargas\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\GPE230_LeviVargas\Public">
       <UniqueIdentifier>{14A6A269-4EAC-31BD-9EC8-ACE422D6F3C1}</UniqueIdentifier>
     </Filter>
@@ -73,6 +82,9 @@
       <Filter>Source\GPE230_LeviVargas\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\GPE230_LeviVargas\Public\LockAndKey.h">
+      <Filter>Source\GPE230_LeviVargas\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\GPE230_LeviVargas\Public\MainMenuGameMode.h">
       <Filter>Source\GPE230_LeviVargas\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\GPE230_LeviVargas\Public\MazeCharacter.h">
@@ -84,6 +96,9 @@
     <ClInclude Include="..\..\Source\GPE230_LeviVargas\Public\MazePlayerController.h">
       <Filter>Source\GPE230_LeviVargas\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\GPE230_LeviVargas\Public\MazeSaveGame.h">
+      <Filter>Source\GPE230_LeviVargas\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\GPE230_LeviVargas\Public\NPCEnemy.h">
       <Filter>Source\GPE230_LeviVargas\Public</Filter>
     </ClInclude>
@@ -91,6 +106,9 @@
       <Filter>Source\GPE230_LeviVargas\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\GPE230_LeviVargas\Public\SpeedPickup.h">
+      <Filter>Source\GPE230_LeviVargas\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\GPE230_LeviVargas\Public\VictoryTriggerVolume.h">
       <Filter>Source\GPE230_LeviVargas\Public</Filter>
     </ClInclude>
   </ItemGroup>

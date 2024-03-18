@@ -10,6 +10,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeNPCEnemy() {}
 // Cross Module References
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+	ENGINE_API UClass* Z_Construct_UClass_USoundWave_NoRegister();
 	GPE230_LEVIVARGAS_API UClass* Z_Construct_UClass_ANPCEnemy();
 	GPE230_LEVIVARGAS_API UClass* Z_Construct_UClass_ANPCEnemy_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_GPE230_LeviVargas();
@@ -76,6 +77,10 @@ void EmptyLinkFunctionForGeneratedCodeNPCEnemy() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp__HitDamage_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp__HitDamage;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp__punchSound_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp__punchSound;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -117,10 +122,18 @@ void EmptyLinkFunctionForGeneratedCodeNPCEnemy() {}
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ANPCEnemy_Statics::NewProp__HitDamage = { "_HitDamage", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANPCEnemy, _HitDamage), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ANPCEnemy_Statics::NewProp__HitDamage_MetaData), Z_Construct_UClass_ANPCEnemy_Statics::NewProp__HitDamage_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ANPCEnemy_Statics::NewProp__punchSound_MetaData[] = {
+		{ "Category", "NPCEnemy" },
+		{ "ModuleRelativePath", "Public/NPCEnemy.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ANPCEnemy_Statics::NewProp__punchSound = { "_punchSound", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ANPCEnemy, _punchSound), Z_Construct_UClass_USoundWave_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ANPCEnemy_Statics::NewProp__punchSound_MetaData), Z_Construct_UClass_ANPCEnemy_Statics::NewProp__punchSound_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ANPCEnemy_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANPCEnemy_Statics::NewProp__TraceRadius,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANPCEnemy_Statics::NewProp__PunchingHandSocketName,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANPCEnemy_Statics::NewProp__HitDamage,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ANPCEnemy_Statics::NewProp__punchSound,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ANPCEnemy_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ANPCEnemy>::IsAbstract,
@@ -160,9 +173,9 @@ void EmptyLinkFunctionForGeneratedCodeNPCEnemy() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GPE230_LeviVargas_Source_GPE230_LeviVargas_Public_NPCEnemy_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ANPCEnemy, ANPCEnemy::StaticClass, TEXT("ANPCEnemy"), &Z_Registration_Info_UClass_ANPCEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANPCEnemy), 3961886477U) },
+		{ Z_Construct_UClass_ANPCEnemy, ANPCEnemy::StaticClass, TEXT("ANPCEnemy"), &Z_Registration_Info_UClass_ANPCEnemy, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ANPCEnemy), 385256595U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GPE230_LeviVargas_Source_GPE230_LeviVargas_Public_NPCEnemy_h_502228339(TEXT("/Script/GPE230_LeviVargas"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GPE230_LeviVargas_Source_GPE230_LeviVargas_Public_NPCEnemy_h_1095835632(TEXT("/Script/GPE230_LeviVargas"),
 		Z_CompiledInDeferFile_FID_GPE230_LeviVargas_Source_GPE230_LeviVargas_Public_NPCEnemy_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GPE230_LeviVargas_Source_GPE230_LeviVargas_Public_NPCEnemy_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

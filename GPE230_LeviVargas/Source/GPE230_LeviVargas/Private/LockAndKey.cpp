@@ -2,6 +2,8 @@
 
 #include "LockAndKey.h"
 #include "MazeCharacter.h"
+#include "Sound/SoundWave.h"
+#include "Kismet/GameplayStatics.h"
 
 ALockAndKey::ALockAndKey()
 {
@@ -18,6 +20,9 @@ void ALockAndKey::CheckActorType(AActor* OverlappedActor, AActor* OtherActor)
 
 void ALockAndKey::OpenTheDoor()
 {
+	//play sound
+	UGameplayStatics::PlaySoundAtLocation(GetWorld(), _unlockSound, GetActorLocation());
+
 	//open the door by destroying its game object
 	this->Destroy();
 }

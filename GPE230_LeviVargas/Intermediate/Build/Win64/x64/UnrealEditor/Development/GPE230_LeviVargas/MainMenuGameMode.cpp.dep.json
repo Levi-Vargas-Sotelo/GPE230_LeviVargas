@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\levib\\documents\\unreal projects\\gpe230_levivargas\\gpe230_levivargas\\gpe230_levivargas\\source\\gpe230_levivargas\\private\\mainmenugamemode.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\levib\\documents\\unreal projects\\gpe230_levivargas\\gpe230_levivargas\\gpe230_levivargas\\intermediate\\build\\win64\\x64\\gpe230_levivargaseditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\levib\\documents\\unreal projects\\gpe230_levivargas\\gpe230_levivargas\\gpe230_levivargas\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\gpe230_levivargas\\definitions.gpe230_levivargas.h",
+            "c:\\users\\levib\\documents\\unreal projects\\gpe230_levivargas\\gpe230_levivargas\\gpe230_levivargas\\source\\gpe230_levivargas\\public\\mainmenugamemode.h",
+            "d:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "d:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "d:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "d:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\users\\levib\\documents\\unreal projects\\gpe230_levivargas\\gpe230_levivargas\\gpe230_levivargas\\intermediate\\build\\win64\\unrealeditor\\inc\\gpe230_levivargas\\uht\\mainmenugamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

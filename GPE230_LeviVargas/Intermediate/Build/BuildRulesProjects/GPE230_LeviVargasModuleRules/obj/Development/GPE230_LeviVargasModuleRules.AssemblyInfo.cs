@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GPE230_LeviVargasModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b721a9efaac000c149ac25232aff9406344a0f2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95f2df2a96e469c9c6a70063d6db24524fb3861e")]
 [assembly: System.Reflection.AssemblyProductAttribute("GPE230_LeviVargasModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GPE230_LeviVargasModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -22,4 +22,8 @@ public:
 
 	UFUNCTION()
 	void OpenTheDoor();
+
+private:
+	UPROPERTY(EditAnywhere)
+	USoundWave* _unlockSound;
 };

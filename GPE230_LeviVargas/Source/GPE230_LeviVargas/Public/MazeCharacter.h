@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "NiagaraFunctionLibrary.h"
 #include "NiagaraComponent.h"
+#include "Blueprint/UserWidget.h"
 #include "GameFramework/Character.h"
 #include "MazeCharacter.generated.h"
 
@@ -52,19 +53,42 @@ private:
 	UPROPERTY(EditAnywhere)
 	UNiagaraSystem* _stunSystem;
 
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<UUserWidget> _gameOverScreenTemplate;
+	UUserWidget* _gameOverScreenInstance;
+
+	UPROPERTY(EditAnywhere)
+		TSubclassOf<UUserWidget> _victoryScreenTemplate;
+	UUserWidget* _victoryScreenInstance;
+
+	UPROPERTY(EditAnywhere)
+	TSubclassOf<UUserWidget> _HUDTemplate;
+	UUserWidget* _HUDInstance;
+
 	UFUNCTION(BlueprintCallable)
 	void ActivateStunParticleSystem();
 
 public:
 	//value for the max health 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+		float maxHealth;
 	UPROPERTY(EditAnywhere)
-	float maxHealth;
-	UPROPERTY(EditAnywhere)
-	float defaultMoveSpeed;
+		float defaultMoveSpeed;
+
+	virtual void OpenVictoryScreen();
+
+	UFUNCTION(BlueprintCallable)
+	float GetCurrentHealth();
 
 protected:
 	//value for health at all times
 	float _currentHealth;
+
+	APlayerController* _controller;
+
+	virtual void OpenGameOverScreen();
+	virtual void PauseGameplay(bool bIsPaused);
+	virtual void ShowMouseCursor();
 	
 
 private:

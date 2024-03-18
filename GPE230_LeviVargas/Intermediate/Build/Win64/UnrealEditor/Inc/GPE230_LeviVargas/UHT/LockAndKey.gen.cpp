@@ -11,6 +11,7 @@ void EmptyLinkFunctionForGeneratedCodeLockAndKey() {}
 // Cross Module References
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_ATriggerBox();
+	ENGINE_API UClass* Z_Construct_UClass_USoundWave_NoRegister();
 	GPE230_LEVIVARGAS_API UClass* Z_Construct_UClass_ALockAndKey();
 	GPE230_LEVIVARGAS_API UClass* Z_Construct_UClass_ALockAndKey_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_GPE230_LeviVargas();
@@ -112,6 +113,11 @@ void EmptyLinkFunctionForGeneratedCodeLockAndKey() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp__unlockSound_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp__unlockSound;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
@@ -134,6 +140,16 @@ void EmptyLinkFunctionForGeneratedCodeLockAndKey() {}
 		{ "ModuleRelativePath", "Public/LockAndKey.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ALockAndKey_Statics::NewProp__unlockSound_MetaData[] = {
+		{ "Category", "LockAndKey" },
+		{ "ModuleRelativePath", "Public/LockAndKey.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ALockAndKey_Statics::NewProp__unlockSound = { "_unlockSound", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ALockAndKey, _unlockSound), Z_Construct_UClass_USoundWave_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ALockAndKey_Statics::NewProp__unlockSound_MetaData), Z_Construct_UClass_ALockAndKey_Statics::NewProp__unlockSound_MetaData) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ALockAndKey_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ALockAndKey_Statics::NewProp__unlockSound,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ALockAndKey_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ALockAndKey>::IsAbstract,
 	};
@@ -143,15 +159,16 @@ void EmptyLinkFunctionForGeneratedCodeLockAndKey() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		FuncInfo,
-		nullptr,
+		Z_Construct_UClass_ALockAndKey_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		UE_ARRAY_COUNT(FuncInfo),
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_ALockAndKey_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ALockAndKey_Statics::Class_MetaDataParams), Z_Construct_UClass_ALockAndKey_Statics::Class_MetaDataParams)
 	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ALockAndKey_Statics::PropPointers) < 2048);
 	UClass* Z_Construct_UClass_ALockAndKey()
 	{
 		if (!Z_Registration_Info_UClass_ALockAndKey.OuterSingleton)
@@ -171,9 +188,9 @@ void EmptyLinkFunctionForGeneratedCodeLockAndKey() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GPE230_LeviVargas_Source_GPE230_LeviVargas_Public_LockAndKey_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ALockAndKey, ALockAndKey::StaticClass, TEXT("ALockAndKey"), &Z_Registration_Info_UClass_ALockAndKey, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALockAndKey), 4046929465U) },
+		{ Z_Construct_UClass_ALockAndKey, ALockAndKey::StaticClass, TEXT("ALockAndKey"), &Z_Registration_Info_UClass_ALockAndKey, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ALockAndKey), 3045058471U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GPE230_LeviVargas_Source_GPE230_LeviVargas_Public_LockAndKey_h_2450190171(TEXT("/Script/GPE230_LeviVargas"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GPE230_LeviVargas_Source_GPE230_LeviVargas_Public_LockAndKey_h_1807339426(TEXT("/Script/GPE230_LeviVargas"),
 		Z_CompiledInDeferFile_FID_GPE230_LeviVargas_Source_GPE230_LeviVargas_Public_LockAndKey_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GPE230_LeviVargas_Source_GPE230_LeviVargas_Public_LockAndKey_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

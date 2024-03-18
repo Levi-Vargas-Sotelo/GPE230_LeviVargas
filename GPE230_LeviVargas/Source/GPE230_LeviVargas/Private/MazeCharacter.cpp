@@ -2,6 +2,7 @@
 
 
 #include "MazeCharacter.h"
+#include "Blueprint/UserWidget.h"
 
 // Sets default values
 AMazeCharacter::AMazeCharacter()
@@ -17,9 +18,18 @@ AMazeCharacter::AMazeCharacter()
 void AMazeCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
+	//get this player controller
+	_controller = Cast<APlayerController>(GetController());
 	
 	//make the player health the max it can be at the start of the game
 	_currentHealth = maxHealth;
+
+	_gameOverScreenInstance = CreateWidget(GetWorld(), _gameOverScreenTemplate);
+	_victoryScreenInstance = CreateWidget(GetWorld(), _victoryScreenTemplate);
+	_HUDInstance = CreateWidget(GetWorld(), _HUDTemplate);
+
+	_HUDInstance->AddToViewport();
 
 	//make the default move speed the set value
 	SetDefaultMoveSpeed();
@@ -39,8 +49,14 @@ float AMazeCharacter::TakeDamage(float DamageAmount, FDamageEvent const& DamageE
 		//kill player if health drops to 0
 		if (_currentHealth <= 0)
 		{
+			//keep value from bein negative
 			_currentHealth = 0;
-			Die();
+
+			//kill only if not dead yet
+			if (_isDead == false)
+			{
+				Die();
+			}
 		}
 
 		//we have to play by Unreal's rules
@@ -56,6 +72,16 @@ void AMazeCharacter::SetDefaultMoveSpeed()
 	moveSpeed = defaultMoveSpeed;
 }
 
+void AMazeCharacter::PauseGameplay(bool bIsPaused)
+{
+	_controller->SetPause(bIsPaused);
+}
+
+void AMazeCharacter::ShowMouseCursor()
+{
+	_controller->bShowMouseCursor = true;
+}
+
 //function for killing player
 void AMazeCharacter::Die()
 {
@@ -65,7 +91,11 @@ void AMazeCharacter::Die()
 	moveSpeed = 0;
 	rotationSpeed = 0;
 
+	//play death animation
 	GetMesh()->PlayAnimation(_deathAnim, false);
+
+	//open game over screen
+	OpenGameOverScreen();
 }
 
 void AMazeCharacter::HealPlayer(float HealAmount)
@@ -104,7 +134,7 @@ void AMazeCharacter::Tick(float DeltaTime)
 // Called to bind functionality to input
 void AMazeCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
-	//bind movementt commands
+	//bind movement commands
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 	PlayerInputComponent->BindAxis("MoveFB", this, &AMazeCharacter::MoveFB);
 	PlayerInputComponent->BindAxis("MoveLR", this, &AMazeCharacter::MoveLR);
@@ -130,6 +160,24 @@ void AMazeCharacter::ActivateStunParticleSystem()
 	{
 		UE_LOG(LogTemp, Error, TEXT("No particle system was found"));
 	}
+}
+
+void AMazeCharacter::OpenVictoryScreen()
+{
+	ShowMouseCursor();
+	_victoryScreenInstance->AddToViewport();
+	PauseGameplay(true);
+}
+
+float AMazeCharacter::GetCurrentHealth()
+{
+	return _currentHealth;
+}
+
+void AMazeCharacter::OpenGameOverScreen()
+{
+	ShowMouseCursor();
+	_gameOverScreenInstance->AddToViewport();
 }
 
 void AMazeCharacter::MoveFB(float value)

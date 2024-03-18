@@ -2,6 +2,8 @@
 
 #include "Pickup.h"
 #include "MazeCharacter.h"
+#include "Sound/SoundWave.h"
+#include "Kismet/GameplayStatics.h"
 
 APickup::APickup()
 {
@@ -18,7 +20,7 @@ void APickup::CheckActorType(AActor* OverlappedActor, AActor* OtherActor)
 
 void APickup::ApplyPickupEffect(AMazeCharacter* Player)
 {
-
+	UGameplayStatics::PlaySound2D(GetWorld(), _pickSound);
 }
 
 void APickup::DeletePickup()

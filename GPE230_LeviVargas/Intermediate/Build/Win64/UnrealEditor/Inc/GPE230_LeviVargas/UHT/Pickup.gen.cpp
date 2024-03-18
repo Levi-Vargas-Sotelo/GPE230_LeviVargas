@@ -11,6 +11,7 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 // Cross Module References
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_ATriggerBox();
+	ENGINE_API UClass* Z_Construct_UClass_USoundWave_NoRegister();
 	GPE230_LEVIVARGAS_API UClass* Z_Construct_UClass_AMazeCharacter_NoRegister();
 	GPE230_LEVIVARGAS_API UClass* Z_Construct_UClass_APickup();
 	GPE230_LEVIVARGAS_API UClass* Z_Construct_UClass_APickup_NoRegister();
@@ -156,6 +157,11 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp__pickSound_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp__pickSound;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
@@ -179,6 +185,16 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 		{ "ModuleRelativePath", "Public/Pickup.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APickup_Statics::NewProp__pickSound_MetaData[] = {
+		{ "Category", "Pickup" },
+		{ "ModuleRelativePath", "Public/Pickup.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APickup_Statics::NewProp__pickSound = { "_pickSound", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APickup, _pickSound), Z_Construct_UClass_USoundWave_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APickup_Statics::NewProp__pickSound_MetaData), Z_Construct_UClass_APickup_Statics::NewProp__pickSound_MetaData) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APickup_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APickup_Statics::NewProp__pickSound,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APickup_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APickup>::IsAbstract,
 	};
@@ -188,15 +204,16 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		FuncInfo,
-		nullptr,
+		Z_Construct_UClass_APickup_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		UE_ARRAY_COUNT(FuncInfo),
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_APickup_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APickup_Statics::Class_MetaDataParams), Z_Construct_UClass_APickup_Statics::Class_MetaDataParams)
 	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_APickup_Statics::PropPointers) < 2048);
 	UClass* Z_Construct_UClass_APickup()
 	{
 		if (!Z_Registration_Info_UClass_APickup.OuterSingleton)
@@ -216,9 +233,9 @@ void EmptyLinkFunctionForGeneratedCodePickup() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GPE230_LeviVargas_Source_GPE230_LeviVargas_Public_Pickup_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APickup, APickup::StaticClass, TEXT("APickup"), &Z_Registration_Info_UClass_APickup, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APickup), 2787406024U) },
+		{ Z_Construct_UClass_APickup, APickup::StaticClass, TEXT("APickup"), &Z_Registration_Info_UClass_APickup, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APickup), 1689681391U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GPE230_LeviVargas_Source_GPE230_LeviVargas_Public_Pickup_h_1305366236(TEXT("/Script/GPE230_LeviVargas"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_GPE230_LeviVargas_Source_GPE230_LeviVargas_Public_Pickup_h_2972723649(TEXT("/Script/GPE230_LeviVargas"),
 		Z_CompiledInDeferFile_FID_GPE230_LeviVargas_Source_GPE230_LeviVargas_Public_Pickup_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_GPE230_LeviVargas_Source_GPE230_LeviVargas_Public_Pickup_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

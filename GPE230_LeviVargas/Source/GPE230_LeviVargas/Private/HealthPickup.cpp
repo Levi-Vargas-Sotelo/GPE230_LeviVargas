@@ -3,6 +3,8 @@
 
 #include "HealthPickup.h"
 #include "MazeCharacter.h"
+#include "Sound/SoundWave.h"
+#include "Kismet/GameplayStatics.h"
 
 void AHealthPickup::ApplyPickupEffect(AMazeCharacter* Player)
 {
@@ -16,6 +18,8 @@ void AHealthPickup::ApplyPickupEffect(AMazeCharacter* Player)
 		canHeal = false;
 
 		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Picked up Health"));
+
+		UGameplayStatics::PlaySound2D(GetWorld(), _pickSound);
 
 		DeletePickup();
 	}

@@ -36,4 +36,7 @@ private:
 	FName _PunchingHandSocketName;
 	UPROPERTY(EditAnywhere)
 	float _HitDamage;
+
+	UPROPERTY(EditAnywhere)
+	USoundWave* _punchSound;
 };

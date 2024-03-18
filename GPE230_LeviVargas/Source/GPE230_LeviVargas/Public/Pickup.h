@@ -26,4 +26,7 @@ protected:
 
 	UFUNCTION()
 	virtual void DeletePickup();
+
+	UPROPERTY(EditAnywhere)
+	USoundWave* _pickSound;
 };
