@@ -1,0 +1,16 @@
+GPE230_LeviVargas/Binaries/Win64/D3D12/D3D12Core.dll	2024-02-14T00:27:03.541Z
+GPE230_LeviVargas/Binaries/Win64/GPE230_LeviVargas-Win64-Shipping.exe	2024-03-20T01:59:33.554Z
+GPE230_LeviVargas/Binaries/Win64/OpenImageDenoise.dll	2024-02-14T01:03:11.946Z
+GPE230_LeviVargas/Binaries/Win64/tbb.dll	2024-02-14T00:26:40.815Z
+GPE230_LeviVargas/Binaries/Win64/tbb12.dll	2024-02-14T01:03:08.519Z
+GPE230_LeviVargas/Binaries/Win64/tbbmalloc.dll	2024-02-14T00:26:40.819Z
+Engine/Extras/Redist/en-us/UEPrereqSetup_x64.exe	2024-02-14T00:37:20.260Z
+Engine/Binaries/ThirdParty/DbgHelp/dbghelp.dll	2024-02-14T00:25:03.514Z
+Engine/Binaries/ThirdParty/MsQuic/v220/win64/msquic.dll	2024-02-14T00:26:49.144Z
+Engine/Binaries/ThirdParty/NVIDIA/NVaftermath/Win64/GFSDK_Aftermath_Lib.x64.dll	2024-02-14T00:26:49.169Z
+Engine/Binaries/ThirdParty/Ogg/Win64/VS2015/libogg_64.dll	2024-02-14T00:26:50.268Z
+Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbis_64.dll	2024-02-14T00:27:03.533Z
+Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbisfile_64.dll	2024-02-14T00:27:03.533Z
+Engine/Binaries/ThirdParty/Windows/XAudio2_9/x64/xaudio2_9redist.dll	2024-02-14T00:27:03.556Z
+Engine/Content/Slate/Cursor/invisible.cur	2024-02-14T00:30:38.703Z
+GPE230_LeviVargas.exe	2024-03-20T02:02:33.784Z
